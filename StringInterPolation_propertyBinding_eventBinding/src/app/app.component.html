@@ -1,0 +1,17 @@
+<h1>Addition function:</h1>
+<div>
+  <label>Input First:
+    <input type="number" class="form-control" [(ngModel)]="A">
+  </label>
+</div>
+<div>
+  <label>Input Second:
+    <input type="number" class="form-control" [(ngModel)]="B">
+  </label>
+</div>
+<div>
+  <button (click)="Sum()" [disabled]="A==0 || B==0">button</button>  <! -- Event Binding --> <! --Property Binding-->
+</div>
+<div>
+  {{Add}} <! -- String Interpolation --> 
+</div>

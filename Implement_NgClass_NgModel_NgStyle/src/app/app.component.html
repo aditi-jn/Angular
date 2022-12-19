@@ -1,0 +1,24 @@
+<div>
+  <label> UserName:
+    <input type="text" class="form-control" [(ngModel)]="UserName" onblur="validateUserName()"> 
+  </label>
+  <small *ngIf="!UserName">{{ds_Error}}</small>
+</div>
+
+<div>
+  <label>Password:
+    <input type="password" class="form-control" [(ngModel)]="Password" onblur="validatePassword()">
+  </label>
+  <small *ngIf="!Password">{{ds_Error1}}</small>
+</div>
+<div>
+  <button type="button" class="btn btn-primary" (click)="show()" >Login</button>
+</div>
+<br>
+<div *ngIf="IsShow">
+  <div>
+    <p [ngStyle]="{'background-color':'green'}"
+        [ngClass]="{'white-text':'UserName'}">{{UserName}} is Login Successfully</p>
+       <br>
+    </div>
+</div>

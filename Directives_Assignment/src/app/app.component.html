@@ -1,0 +1,12 @@
+<div>
+  <button (click)= toggle()>Display Details </button>
+  <div *ngIf="!IsShow">
+    <p>My Name is Aditi Jain</p>
+  </div>
+</div>
+
+<div *ngFor="let Item of NumberArray"
+  [ngStyle]="{backgroundColor: Item >= 5 ?'blue':'offwhite'}"
+  [ngClass]="{'text-color' : Item >= 5}">
+  <p>{{Item}}</p>
+</div>

@@ -1,0 +1,14 @@
+<h1>ng for and ng switch</h1>
+<ul *ngFor="let student of StudentArray"
+    [ngSwitch]="student">
+    {{student}}
+
+  <li *ngSwitchCase="'Aditi'">Welcome Aditi
+  </li>
+  <li *ngSwitchCase="'vishakha'">welcome vishakha
+  </li>
+  <li *ngSwitchCase="'yash'">welcome yash
+  </li>
+  <li *ngSwitchDefault> empty
+  </li>
+</ul>`
