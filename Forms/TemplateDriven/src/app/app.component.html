@@ -1,0 +1,30 @@
+<form (ngSubmit)="onSubmit()" #subscriptionForm="ngForm">
+  <label for="email">Email address:</label><br>
+  <input type="email" id="email" name="email" [(ngModel)]="email" required #emailInput="ngModel"><br>
+  <div *ngIf="isHide" style="color: red;">
+  Email address is required
+  </div>
+  
+  <label for="subscription">Subscription:</label><br>
+  <select id="subscription" name="subscription" [(ngModel)]="subscription">
+    <option value="default">--- Select Option ---</option>
+  <option value="Basic">Basic</option>
+  <option value="Advanced">Advanced</option>
+  <option value="Pro">Pro</option></select>
+  <div *ngIf="isHide1" style="color: red;">
+    Subscription is required
+    </div>
+  <label for="password">Password:</label><br>
+  <input type="password" id="password" name="password" [(ngModel)]="password" required #passwordInput="ngModel"><br>
+  <div *ngIf="isHide2" style="color: red;">
+  Password is required
+  </div>
+  
+  <input type="submit" value="Submit">
+  </form>
+
+  <h1  *ngIf="isSuccess">
+    {{this.email}}
+    {{this.password}}
+    {{this.subscription}}
+  </h1>
