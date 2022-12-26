@@ -1,0 +1,35 @@
+{
+  "EmployeeData": [
+    {
+      "id": 2,
+      "employeeName": "chhaya",
+      "address": "Indore",
+      "contactNo": "1234567890",
+      "email": "aditi435jain@gmail.com"
+    },
+    {
+      "id": 4,
+      "employeeName": "utkarsh",
+      "address": "barode",
+      "contactNo": "1234567890",
+      "email": "aditi435jain@gmail.com"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,38 @@
+
+<table class="my-2 ml-5 col-md-5" border="1">
+
+    <tr>
+
+        <td class="elipsis"><b>Id</b></td>
+
+        <td class="elipsis"> <b>Name</b></td>
+
+        <td class="elipsis"> <b>Address</b></td>
+
+        <td class="elipsis"><b>Contact No</b></td>
+
+        <td class="elipsis"> <b>Email</b></td>
+        
+        <td class="elipsis"><b>Delete</b></td>
+        <td class="elipsis"><b>Edit</b></td>
+    </tr>
+
+    <tr *ngFor = "let e of stu">
+
+        <td>{{e.id}}</td>
+
+        <td>{{e.employeeName}}</td>
+
+        <td>{{e.address}}</td>
+
+        <td>{{e.contactNo}}</td>
+
+        <td>{{e.email}}</td>
+
+        <td><button (click)="deleteDataById(e.id)" class="btn btn-danger btn-sm" ><i class="bi bi-trash-fill"></i></button></td>
+        <td><button (click)="editDataById(e.id)" class="btn btn-primary btn-sm" ><i class="bi bi-pencil-fill"></i></button></td>
+
+    </tr>
+
+</table>
+ 

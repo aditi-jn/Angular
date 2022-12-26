@@ -1,0 +1,48 @@
+<div class="col-md-12">
+<form [formGroup]= "employeeform" (ngSubmit)="onSubmit()">
+
+<div>
+<label  class="col-form-label"><b>Employee Name: </b></label>
+<input type="text" class="form-control" placeholder="name" formControlName="employeeName" [pattern]="namepattern">
+<div style="color: red;" *ngIf="employeeform.controls['employeeName'].touched && employeeform.controls['employeeName'].invalid">
+    <span *ngIf="employeeform.controls['employeeName'].hasError('required')">name is required</span>
+    <span *ngIf="employeeform.controls['employeeName'].hasError('pattern')">only alphabate with
+        space between 2 to 20 charecters
+    </span>
+</div>
+</div><br>
+
+<div>
+<label for="address"><b>Employee address: </b></label>
+<input type="text" class="form-control" placeholder="address" formControlName="address" required>
+<div style="color: red;" *ngIf="employeeform.controls['address'].touched && employeeform.controls['address'].invalid">
+    <span *ngIf="employeeform.controls['address'].hasError('required')">address is required</span>
+</div>
+</div><br>
+
+<div>
+<label for="contactNo"><b>Employee contactNo: </b></label>
+<input type="text" class="form-control" placeholder="mobile no" formControlName="contactNo" required>
+<div style="color: red;" *ngIf="employeeform.controls['contactNo'].touched && employeeform.controls['contactNo'].invalid">
+    <span *ngIf="employeeform.controls['contactNo'].hasError('required')">mobile no is required</span>
+    <span *ngIf="employeeform.controls['contactNo'].getError?.length">use 10 digit mob no</span>
+</div>
+</div><br>
+
+<div>
+<label for="email"><b>Employee email: </b></label>
+<input type="text" class="form-control" placeholder="email" formControlName="email" [pattern]="emailpattern" required>
+<div style="color: red;" *ngIf="employeeform.controls['email'].touched && employeeform.controls['email'].invalid">
+    <span *ngIf="employeeform.controls['email'].hasError('required')">email is required</span>
+    <span *ngIf="employeeform.controls['email'].hasError('pattern')">inavlid email</span>
+</div>
+</div><br>
+
+<div class="d-flex">
+<button class="btn btn-primary mx-2" type="submit" value="submit">Submit</button>
+    <button class="btn btn-danger mx-2" type="submit" value="Reset" (click)="Reset()"> Reset</button>
+</div>
+</form>
+
+</div>
+
