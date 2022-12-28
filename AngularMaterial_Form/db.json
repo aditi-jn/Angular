@@ -1,0 +1,31 @@
+{
+  "Register": [
+    {
+      "name": "Aditi Jain",
+      "email": "aditi435jain@gmail.com",
+      "password": "1234567890",
+      "skill": "Intermediate",
+      "date": "2022-12-29T18:30:00.000Z",
+      "gender": "Female",
+      "mobile": "9131380179",
+      "id": 1
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
