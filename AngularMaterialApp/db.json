@@ -1,0 +1,115 @@
+{
+  "DetailInfo": [
+    {
+      "name": "Aditi Jain",
+      "email": "aditi435jain@gmail.com",
+      "fname": "ParasJain",
+      "mname": "Sadhnajain",
+      "date": "2023-01-12T18:30:00.000Z",
+      "gender": "Female",
+      "mobile": "9131380179",
+      "name1": "aknbnjnbjgr",
+      "bankaccountno": "123456789012",
+      "bankname": "aaaaaaaaaaaaa",
+      "ifsccode": "aaaaaaaaaaaa",
+      "mobilebanking": "No",
+      "internetbanking": "No",
+      "presentaddress": "aaaaaaaaaaaaaaa",
+      "permanentaddress": "aaaaaaaaaaaaaaaa",
+      "id": 1
+    },
+    {
+      "name": "Aditi Jain",
+      "email": "aditi435jain@gmail.com",
+      "fname": "ParasJain",
+      "mname": "Sadhnajain",
+      "date": "2023-01-25T18:30:00.000Z",
+      "gender": "Female",
+      "mobile": "9131380179",
+      "name1": "",
+      "bankaccountno": "",
+      "bankname": "",
+      "ifsccode": "",
+      "mobilebanking": "",
+      "internetbanking": "",
+      "presentaddress": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "permanentaddress": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "id": 2
+    },
+    {
+      "name": "Aditi Jain",
+      "email": "aditi435jain@gmail.com",
+      "fname": "ParasJain",
+      "mname": "Sadhnajain",
+      "date": "2023-01-26T18:30:00.000Z",
+      "gender": "Female",
+      "mobile": "9131380179",
+      "name1": "aknbnjnbjgr",
+      "bankaccountno": "12345678901211",
+      "bankname": "aaaaaaaaaaaaa",
+      "ifsccode": "aaaaaaaaaaaa",
+      "mobilebanking": "Male",
+      "internetbanking": "Male",
+      "presentaddress": "aaaaaaaaaaaaaa",
+      "permanentaddress": "aaaaaaaaaaaaaaaaa",
+      "id": 3
+    },
+    {
+      "name": "Aditi Jain",
+      "email": "aditi435jain@gmail.com",
+      "fname": "bbbbfbgb",
+      "mname": "Sadhnajain",
+      "date": "2023-01-26T18:30:00.000Z",
+      "gender": "Female",
+      "mobile": "9131380179",
+      "name1": "",
+      "bankaccountno": "",
+      "bankname": "",
+      "ifsccode": "",
+      "mobilebanking": "",
+      "internetbanking": "",
+      "presentaddress": "aaaaaaaaaaaaaaaaaaaaaa",
+      "permanentaddress": "aaaaaaaaaaaaaaaaaaaaaaa",
+      "id": 4
+    }
+  ],
+  "Register": [
+    {
+      "name": "Aditi Jain",
+      "email": "aditi435jain@gmail.com",
+      "password": "123456",
+      "skill": "Intermediate",
+      "date": "2023-01-26T18:30:00.000Z",
+      "gender": "Female",
+      "mobile": "9131380179",
+      "id": 2
+    },
+    {
+      "name": "Aditi Jain",
+      "email": "vi@gmail.com",
+      "password": "123456",
+      "skill": "Intermediate",
+      "date": "2023-01-18T18:30:00.000Z",
+      "gender": "Female",
+      "mobile": "9131380179",
+      "id": 3
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

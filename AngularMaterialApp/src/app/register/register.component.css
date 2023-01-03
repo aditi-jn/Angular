@@ -1,0 +1,13 @@
+.classs {
+    margin: auto;
+    margin-top: 50px;
+    width: 50%;
+    padding: 10px;
+    background-image: linear-gradient(140deg, #EADEDB 0%, #3f3cdb 50%, #9999ff 75%);
+    box-shadow: 2px 2px 10px rgb(98, 176, 225);
+}
+
+.form {
+    margin-top: 10px;
+    margin-left: 50px;
+}

@@ -1,0 +1,26 @@
+<div class="classs">
+    <h1 style="color: rgb(246, 245, 250); font-family:'Times New Roman', Times, serif; text-align: center;">Login</h1>
+    <form [formGroup]="loginform" (ngSubmit)="onSubmit()" class="form" novalidate>
+        <mat-form-field class="custom-form-field ">
+            <mat-label>Email:</mat-label>
+            <mat-icon class="material-icons" matSuffix>email</mat-icon>
+            <input matInput="" placeholder="enter email" formControlName="email" class="form-input-field" id="email"
+                pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+            <mat-error *ngIf="myError('email', 'required')">email is required</mat-error>
+            <mat-error *ngIf="myError('email', 'pattern')">Please enter vaild email</mat-error>
+        </mat-form-field>
+        <br>
+        <mat-form-field class="custom-form-field">
+            <mat-label>Password:</mat-label>
+            <mat-icon class="material-icons" matSuffix>password</mat-icon>
+            <input matInput="" placeholder="enter Password" type="password" formControlName="password"
+                class="form-input-field" id="password" pattern="^[a-zA-Z0-9]{6,12}$" minlength="6" maxlength="12">
+            <mat-error *ngIf="myError('password', 'required')">Password is required</mat-error>
+            <mat-error *ngIf="myError('password', 'pattern')">
+                Only alphabetes and numbers are allowed
+            </mat-error>
+        </mat-form-field>
+        <br>
+        <button mat-raised-button color="primary" type="submit" value="submit" center>Login</button>
+        <span style="color: red;">{{this.Error1}}</span>
+    </form>
